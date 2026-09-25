@@ -33,6 +33,3 @@ styles/
 - Las 5 páginas HTML deben incluir un `title`, `meta description` y `meta keywords` específico para su contenido.
 - Los enlaces de correo y teléfono utilizan `mailto:` y `tel:`.(check)
 
-
-
-En GitHub Pages puede publicarse desde **Settings > Pages**, seleccionando la rama que contiene `index.html` en la raíz.
