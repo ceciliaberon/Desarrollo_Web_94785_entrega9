@@ -1,0 +1,78 @@
+@use '../utilities/variables' as vars;
+
+.sobre-info {
+    padding: 20px;
+}
+
+.sobre-item {
+
+    input {
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    label {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 10px 0;
+
+        color: vars.$color-texto;
+        font-size: 26px;
+        font-weight: 600;
+        cursor: pointer;
+
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: vars.$color-acento;
+        }
+
+        &::after {
+            content: "+";
+            font-size: 20px;
+
+            transition: transform 0.3s ease;
+        }
+    }
+
+    .sobre-descripcion {
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        margin: 0;
+
+        transition:
+            max-height 0.5s ease,
+            opacity 0.4s ease,
+            margin 0.4s ease;
+
+        figure {
+            margin: 0;
+
+            img {
+                margin-top: 15px;
+            }
+
+            figcaption {
+                margin-top: 10px;
+            }
+        }
+    }
+
+    input:checked + label {
+        color: vars.$color-acento;
+    }
+
+    input:checked + label::after {
+        transform: rotate(45deg);
+    }
+
+    input:checked ~ .sobre-descripcion {
+        max-height: 700px;
+        opacity: 1;
+        margin-top: 15px;
+    }
+}

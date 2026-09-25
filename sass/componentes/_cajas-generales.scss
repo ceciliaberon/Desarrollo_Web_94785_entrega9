@@ -1,0 +1,56 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+
+//EXTEND
+%caja-base {
+    border-radius: $radio-borde;
+    padding: $espaciado-medio;
+}
+// CLASES
+
+.datos-contacto {
+    @extend %caja-base;
+
+    background-color: $color-contacto;
+    padding: $espaciado-grande;
+
+    figure {
+        margin-bottom: $espaciado-medio;
+    }
+}
+
+.imagen {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+}
+
+.carousel {
+    padding: $espaciado-medio;
+
+    .carousel-img {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        margin: auto;
+        border: 40px solid $color-blanco;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        transition: opacity 0.3s ease;
+
+        &:hover {
+            opacity: 0.7;
+        }
+
+        &:focus {
+            outline: 2px solid $color-texto;
+        }
+
+        &:active {
+            opacity: 0.5;
+        }
+    }
+}

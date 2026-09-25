@@ -1,0 +1,25 @@
+@use '../utilities/variables' as *;
+// MIXINS
+
+@mixin flex-column($gap: 20px) {
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+}
+
+@mixin estado-interactivo($color-hover) {
+    transition: color 0.3s ease, background-color 0.3s ease;
+
+    &:hover {
+        color: $color-hover;
+    }
+
+    &:focus {
+        outline: 2px solid $color-hover;
+        outline-offset: 3px;
+    }
+
+    &:active {
+        color: $color-texto;
+    }
+}

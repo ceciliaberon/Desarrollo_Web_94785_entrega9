@@ -1,0 +1,12 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+footer {
+    @include flex-column($espaciado-medio);
+
+    padding: $espaciado-medio;
+    background-color: $color-claro;
+    color: $color-texto-secundario;
+    font-size: 16px;
+    border-radius: $radio-borde;
+}

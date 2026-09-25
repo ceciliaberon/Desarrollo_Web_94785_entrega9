@@ -1,0 +1,39 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+header {
+    background-color: $color-claro;
+    padding: $espaciado-medio;
+    border-radius: $radio-borde;
+
+    .navbar {
+        width: 100%;
+        background-color: $color-claro;
+    }
+
+    .header_logo {
+        font-size: 42px;
+        font-weight: 700;
+        color: $color-texto;
+    }
+
+    .nav-link {
+        font-size: 16px;
+        color: $color-texto-secundario;
+        text-decoration: none;
+
+        @include estado-interactivo($color-acento);
+    }
+
+    .navbar-brand {
+        color: $color-texto;
+
+        &:hover {
+            color: $color-acento;
+        }
+    }
+
+    .navbar-toggler {
+        border: 1px solid $color-texto;
+    }
+}
