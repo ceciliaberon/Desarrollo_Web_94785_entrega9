@@ -33,3 +33,5 @@ styles/
 - Las 5 páginas HTML deben incluir un `title`, `meta description` y `meta keywords` específico para su contenido.
 - Los enlaces de correo y teléfono utilizan `mailto:` y `tel:`.(check)
 
+## Visualización de pagina 
+https://ceciliaberon.github.io/Desarrollo_Web_94785_entrega9/
