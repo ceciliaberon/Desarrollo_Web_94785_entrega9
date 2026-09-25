@@ -35,3 +35,7 @@ styles/
 
 ## Visualización de pagina 
 https://ceciliaberon.github.io/Desarrollo_Web_94785_entrega9/
+
+## Deploy
+Sitio publicado en Vercel:
+https://desarrollo-web-94785-entrega9.vercel.app/
